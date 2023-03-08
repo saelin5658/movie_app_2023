@@ -11,7 +11,7 @@ function App() {
     //브라우저를 불러올수 있게 해줌 
     //사용자가 입력한 url를 이용해서 컴포넌트를 불러옴
     //주소창에 url이 바뀌면 그 주소창(path)에 해당되는 컴포넌트를 불러옴
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
     <Navigation />
     <Routes>
       <Route path='/' element={<Home/>}/>
