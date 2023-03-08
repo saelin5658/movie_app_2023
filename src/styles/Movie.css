@@ -1,0 +1,51 @@
+.movies .movie{
+  background: #fff;
+  margin-bottom: 70px;
+  font-weight: 300;
+  padding: 20px;
+  border-radius: 5px;
+  color: #adaeb9;
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25),
+  0 8px 16px -8px rgba(0,0,0,0.3),
+  0 -6px 16px -6px rgba(0,0,0,0.025)
+}
+.movies .movie a{
+  display: grid;
+  grid-template-columns: minmax(150px,1fr)2fr;/*앞열(최소크기지정,비율), 뒷열(2fr비율)*/
+  grid-gap: 10px;
+}
+/* 박스쉐도우  x축 y축 bulr spread color
+  spread는 그림자의 확장,양수는 확장 음수는 축소 */
+
+.movie img{position: relative;
+  top: -50px;
+  max-width:  150px;
+  margin-right: 30px;
+  box-shadow:0 30px 60px -12px rgba(50,50,93,0.25),
+  0 18px 36px -18px rgba(0,0,0,0.3),
+  0 -12px 36px -8px rgba(0,0,0,0.025);}
+
+.movie .movie_title,
+.movie .movie_year{
+  margin: 0;
+  font-weight: 300;
+}
+
+.movie .movie_title{margin-bottom: 5px;
+  font-size: 24px;
+  color: #3d7ffc;
+  font-weight: bold;}
+
+.movie .movie_genres{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+
+.movie .movie_genres,.movie_year{
+  margin-right: 10px;
+  font-size: 14px;
+}
